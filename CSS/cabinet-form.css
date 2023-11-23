@@ -1,0 +1,42 @@
+#form-email-container label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#form-input {
+    min-width: 50%;
+}
+
+#textarea-container label {
+    display: block;
+    margin: 10px 0;
+}
+
+#textarea {
+    min-width: 50%;
+}
+
+#form-button {
+    margin-top: 10px;
+    padding: 4px 10px;
+    color: #0d6efd;
+    background-color: transparent;
+    border: 1px solid #0d6efd;
+    border-radius: 4px;
+    transition: all 0.1s;
+}
+
+#form-button:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.alertFail {
+    color: red;
+    opacity: 80%;
+}
+
+.alertSuccess {
+    color: green;
+    opacity: 80%;
+}

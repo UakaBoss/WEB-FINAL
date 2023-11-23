@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- CSS, FONTS, FAVICON, BOOTSTRAP -->
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/nav.css">
+  <link rel="stylesheet" href="CSS/product-list.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="CSS/page-product.css">
+  <link rel="icon" href="images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Open+Sans:wght@300;400;500;600;700;800&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- WEB NAME -->
+  <title>iPhone 14 Pro Max</title>
+</head>
+<body>
+  <div class="main-container">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid nav-container">
+        <a class="navbar-brand" id="logo" href="index.html">SHOPYF<span>i</span></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="store.html">Store</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="cabinet.html">Cabinet</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="puzzle.html">Game</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="shop-list.html">Shop-list</a>
+              </li>
+          </ul>
+        </div>
+        <section>
+          <form action="" id="searchBar">
+              <input type="text" name="" placeholder="Search..." />
+              <button type="button" onclick="toggleBar()">
+                  <svg class="search" version="1.1" viewBox="0 0 32 32"><circle cx="14" cy="14" fill="none" id="XMLID_42_" r="9" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" id="XMLID_44_" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="27" x2="20.366" y1="27" y2="20.366"/></svg>
+                  <svg class="close" viewBox="0 0 32 32"><g data-name="Layer 2" id="Layer_2"><path fill="#fff" d="M4,29a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42l24-24a1,1,0,1,1,1.42,1.42l-24,24A1,1,0,0,1,4,29Z"/><path fill="#fff" d="M28,29a1,1,0,0,1-.71-.29l-24-24A1,1,0,0,1,4.71,3.29l24,24a1,1,0,0,1,0,1.42A1,1,0,0,1,28,29Z"/></g><g id="frame"><rect fill="none" height="32" width="32"/></g></svg>
+              </button>
+          </form>
+        </section>
+        <div class="d-flex" id="nav-icons">
+          <!-- CART icon -->
+          <a href="#">
+            <img id="icon-wishlist" src="images/cart-icon.svg" alt="cart">
+            <span id="cartCountNumber">0</span>
+          </a>
+          <audio id="cart-sound" src="sounds/notification-cart.wav"></audio>
+          <!-- WISHLIST icon -->
+          <a href="#">
+            <img id="icon-cart" src="images/heart-icon.svg" alt="cart">
+            <span id="wishlistCountNumber">0</span>
+          </a>
+          <audio id="wishlist-sound" src="sounds/notification-wishlist.wav"></audio>
+        </div>
+      </div>
+    </nav>
+    <!-- MAIN PAGE -->
+    <div class="container-fluid main-page">
+      <!-- TITLE -->
+      <div class="row" style="margin-bottom: 80px;">
+        <div class="col-12">
+          <h1 class="display-2">HELLO FROM <span class="SHOPYFi">SHOPYFi</span></h1>
+        </div>
+      </div>
+      <!-- MAIN PAGE -->
+      <div class="row">
+        <div class="col-1"></div>
+        <!-- LEFT SIDE (PRODUCT, PRICE) -->
+        <div class="col-7">
+          <!-- PRODUCT NAME -->
+          <div class="row product-name">
+            <p>Smartphone Apple iPhone 14 Pro Max</p>
+          </div>
+          <!-- PRODUCT IMG, PRICE, CHARACTERISTICS -->
+          <div class="row">
+            <div class="col-6">
+              <img src="images/iPhone-14-Pro-Max.png" alt="" class="product-img">
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-6 product-price">
+                  <p>799 990 &#8376;</p>
+                </div>
+                <div class="col-6 product-btn">
+                  <a href="#" class="btn btn-primary">Buy</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      OR
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Add to cart</a></li>
+                      <li><a class="dropdown-item" href="#">Add to wishlist</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--Group List (charateristics)-->
+              <div class="row mt-4">
+                <div class="product-info">
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">Display size, inch</li>
+                    <li class="list-group-item">6,7</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">Display resolution</li>
+                    <li class="list-group-item">2796 x 1290</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">Storage</li>
+                    <li class="list-group-item">256 GB</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">Proccesor</li>
+                    <li class="list-group-item">A16 Bionic</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">Main camera, Mp</li>
+                    <li class="list-group-item">48 + 12 + 12</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">Front camera, Mp</li>
+                    <li class="list-group-item">12</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">Wireless</li>
+                    <li class="list-group-item">Wifi, Bluetooth, NFC</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- RIGHT SIDE (CARDS) -->
+        <div class="col-3 right-block">
+          <p>&darr; WE ALSO HAVE &darr;</p>
+          <div class="card" style="width: 18rem;">
+            <a href=""><img src="images/air-pods1.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="" class="card-title">Air Pods Pro</a>
+              <p class="card-text card-price">120 000 &#8376;</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+              <div class="dropdown mt-2">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  OR
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Add to cart</a></li>
+                  <li><a class="dropdown-item" href="#">Add to wishlist</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <a href=""><img src="images/Samsung-Galaxy-S23-black.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="" class="card-title">Samsung Galaxy S23</a>
+              <p class="card-text card-price">459 000 &#8376;</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+              <div class="dropdown mt-2">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  OR
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Add to cart</a></li>
+                  <li><a class="dropdown-item" href="#">Add to wishlist</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <h2>SHOPYFi.com</h2>
+        <h6>MADE BY KAMAROV UALIKHAN, AIGALI SULTANKUL, ZHANIBEK BAKYT SE-2211</h6>
+        <p>CONTACT US</p>
+        <p>+7 742 288 93 022 (FAKE NUMBER)</p>
+      </div>
+    </footer>
+  </div>
+</body>
+  <!-- BOOTSTRAP JS -->
+  <script src="JS/nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

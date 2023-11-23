@@ -1,0 +1,30 @@
+#board {
+    width: 374px;
+    height: 374px;
+    background-color: lightblue;
+    border: 10px solid #0c67ae;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 118px;
+    height: 118px;
+    border: 1px solid #0c67ae;
+}
+
+#checkPuzzleButton {
+    margin-top: 10px;
+    padding: 4px 10px;
+    color: #0d6efd;
+    background-color: transparent;
+    border: 1px solid #0d6efd;
+    border-radius: 4px;
+    transition: all 0.1s;
+}
+
+#checkPuzzleButton:hover {
+    background-color: #0d6efd;
+    color: white;
+}

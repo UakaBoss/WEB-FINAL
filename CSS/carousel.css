@@ -1,0 +1,8 @@
+.carousel-item img{
+    margin: auto auto;
+}
+
+#carouselExampleSlidesOnly {
+    width: 400px;
+    margin: auto auto;
+}

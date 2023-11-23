@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- CSS, FONTS, FAVICON, BOOTSTRAP -->
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/nav.css">
+  <link rel="stylesheet" href="CSS/video.css">
+  <link rel="stylesheet" href="CSS/carousel.css">
+  <link rel="stylesheet" href="CSS/product-list.css">
+  <link rel="stylesheet" href="CSS/scrollToTopButton.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="icon" href="images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Open+Sans:wght@300;400;500;600;700;800&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- WEB NAME -->
+  <title>SHOPYFi</title>
+</head>
+<body>
+  <div class="main-container">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid nav-container">
+        <a class="navbar-brand" id="logo" href="index.html">SHOPYF<span>i</span></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="store.html">Store</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="cabinet.html">Cabinet</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="puzzle.html">Game</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" id="nav-link" aria-current="page" href="shop-list.html">Shop-list</a>
+              </li>
+          </ul>
+        </div>
+        <section>
+          <form action="" id="searchBar">
+              <input type="text" name="" placeholder="Search..." />
+              <button type="button" onclick="toggleBar()">
+                  <svg class="search" version="1.1" viewBox="0 0 32 32"><circle cx="14" cy="14" fill="none" id="XMLID_42_" r="9" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" id="XMLID_44_" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="27" x2="20.366" y1="27" y2="20.366"/></svg>
+                  <svg class="close" viewBox="0 0 32 32"><g data-name="Layer 2" id="Layer_2"><path fill="#fff" d="M4,29a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42l24-24a1,1,0,1,1,1.42,1.42l-24,24A1,1,0,0,1,4,29Z"/><path fill="#fff" d="M28,29a1,1,0,0,1-.71-.29l-24-24A1,1,0,0,1,4.71,3.29l24,24a1,1,0,0,1,0,1.42A1,1,0,0,1,28,29Z"/></g><g id="frame"><rect fill="none" height="32" width="32"/></g></svg>
+              </button>
+          </form>
+        </section>
+        <div class="d-flex" id="nav-icons">
+          <!-- CART icon -->
+          <a href="#">
+            <img id="icon-wishlist" src="images/cart-icon.svg" alt="cart">
+            <span id="cartCountNumber">0</span>
+          </a>
+          <audio id="cart-sound" src="sounds/notification-cart.wav"></audio>
+          <!-- WISHLIST icon -->
+          <a href="#">
+            <img id="icon-cart" src="images/heart-icon.svg" alt="cart">
+            <span id="wishlistCountNumber">0</span>
+          </a>
+          <audio id="wishlist-sound" src="sounds/notification-wishlist.wav"></audio>
+        </div>
+      </div>
+    </nav>
+    <!-- VIDEO -->
+    <video id="video-background" autoplay loop muted>
+      <source src="videos/Introducing iPhone 15 Pro   Apple.mp4" type="video/mp4">
+    </video>
+    <!-- MAIN PAGE -->
+    <div class="container-fluid main-page">
+      <!-- TITLE -->
+      <div class="row" style="margin-bottom: 20px;">
+        <div class="col-12">
+          <h1 class="display-2">HELLO FROM <span class="SHOPYFi">SHOPYFi</span></h1>
+        </div>
+      </div>
+      <!-- CAROUSEL -->
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img src="images/iPhone1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="images/Samsung-Galaxy-S23-lightblue.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="images/iMac1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="images/air-pods1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="images/iMac2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="images/iPhone2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="images/Samsung-Galaxy-S23-black.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PRODUCT LIST -->
+      <div class="row" style="margin-top: 40px;">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <div class="row product-list align-items-center">
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 17rem;">
+                <a href="page-iphone-14-pro-max.html"><img src="images/iPhone-14-Pro-Max.png" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <a href="page-iphone-14-pro-max.html" class="card-title">iPhone 14 Pro Max</a>
+                  <p class="card-text card-price">650 000 &#8376;</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      OR
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item button-cart" href="#">Add to cart</a></li>
+                      <li><a class="dropdown-item button-wishlist" href="#">Add to wishlist</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 17rem;">
+                <a href="page-samsung-galaxy-s23.html"><img src="images/Samsung-Galaxy-S23-black.png" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <a href="page-samsung-galaxy-s23.html" class="card-title">Samsung Galaxy S23</a>
+                  <p class="card-text card-price">459 000 &#8376;</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      OR
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item button-cart" href="#">Add to cart</a></li>
+                      <li><a class="dropdown-item button-wishlist" href="#">Add to wishlist</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 17rem;">
+                <a href="page-imac-m1.html"><img src="images/iMac1.png" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <a href="page-imac-m1.html" class="card-title">iMac M1</a>
+                  <p class="card-text card-price">520 000 &#8376;</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      OR
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item button-cart" href="#">Add to cart</a></li>
+                      <li><a class="dropdown-item button-wishlist" href="#">Add to wishlist</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 17rem;">
+                <a href="page-air-pods-pro.html"><img src="images/air-pods1.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <a href="page-air-pods-pro.html" class="card-title">Air Pods Pro</a>
+                  <p class="card-text card-price">120 000 &#8376;</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      OR
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item button-cart" href="#">Add to cart</a></li>
+                      <li><a class="dropdown-item button-wishlist" href="#">Add to wishlist</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <!-- SCROLL TO TOP BUTTON -->
+      <button id="scrollToTopButton" onclick="onTop()">TOP</button>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <h2>SHOPYFi.com</h2>
+        <h6>MADE BY KAMAROV UALIKHAN, AIGALI SULTANKUL, ZHANIBEK BAKYT SE-2211</h6>
+        <p>CONTACT US</p>
+        <p>+7 742 288 93 022 (FAKE NUMBER)</p>
+      </div>
+    </footer>
+  </div>
+</body>
+  <!-- BOOTSTRAP JS -->
+  <script src="JS/nav.js"></script>
+  <script src="JS/product-list.js"></script>
+  <script src="JS/scrollToTopButton.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

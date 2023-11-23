@@ -1,0 +1,25 @@
+body {
+    background-image: url(../images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100% ;
+}
+
+.main-container {
+    padding: 40px;
+    padding-bottom: 0px;
+}
+
+.main-page {
+    background-color: white;
+    text-align: center;
+    padding: 20px 40px;
+    min-height: 100vh;
+}
+
+.SHOPYFi {
+    color: #fd7e14;
+    border-bottom: 3px solid #fd7e14;
+}

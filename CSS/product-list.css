@@ -1,0 +1,59 @@
+.card {
+    margin-bottom: 60px;
+    transition: transform 0.2s;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    max-height: 270px;
+    min-height: 270px;
+}
+
+.card-title {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.card-price {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.btn.btn-primary {
+    width: 200px;
+    font-size: 18px;
+    background-color: #fd7e14;
+    border: 1px solid #fd7e14;
+}
+
+.btn.btn-primary:hover {
+    background-color: #e06f12;
+    border: 1px solid #e06f12;
+}
+
+.btn.btn-secondary {
+    width: 200px;
+    font-size: 16px;
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #0c60de;
+    border: 1px solid #0c60de;
+}
+
+.cardHolder {
+    width: 25%;
+}
+
+@media screen and (max-width: 1000px) {
+    .product-list {
+        width: 100%;
+    }
+}

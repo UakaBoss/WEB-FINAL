@@ -1,0 +1,20 @@
+footer {
+    width: 100%;
+    min-height: fit-content;
+    background-color: black;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(111, 111, 111);
+}
+
+footer h2, h6 {
+    color: rgba(255, 166, 0, 0.495);
+}
+
+.footer-content {
+    justify-content: center;
+    text-align: center;
+}
